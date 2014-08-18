@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf8"?>
+<document>
+	<RealmId>1</RealmId>
+	<Version>1</Version>
+	<ServerIp>127.0.0.1</ServerIp>
+	<ServerPort>8080</ServerPort>
+	<!-- 日志输出等级, 3=全部 -->
+	<LogLevel>3</LogLevel>
+	<!-- 基本, 错误, sql, debug日志的颜色 -->
+	<LogColors>11 1 5 3</LogColors>
+	<!-- 日志文件的目录, 相对于程序目录 -->
+	<LogsDir>logs</LogsDir>
+	<!-- 保存错误日志的文件名 -->
+	<ErrorLogfile>error</ErrorLogfile>
+	<!-- 保存sql语句执行失败的日志的文件名 -->
+	<SQLLogfile>sql</SQLLogfile>
+	<!-- 保存调试日志的文件名 -->
+	<DebugLogfile>debug</DebugLogfile>
+	<!-- 最大可接受的连接数量 -->
+	<max_player>500</max_player>
+
+	<!-- db_auth>192.168.1.16;3306;mysql_user_name;mysql_password;db_name;sync</db_auth -->
+</document>

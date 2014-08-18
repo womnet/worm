@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf8"?>
+<document>
+    <sleep>8</sleep>
+    <guard>/work/server/bin/guard.sh</guard>
+</document>

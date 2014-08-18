@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guard", "..\Guard\Guard.vcproj", "{3B1AAD6B-9F22-4FF1-92A2-7663B6D255F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A5678EB-8B62-441A-81FC-D4B90581478D} = {6A5678EB-8B62-441A-81FC-D4B90581478D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "worm_net", "worm_net.vcproj", "{6A5678EB-8B62-441A-81FC-D4B90581478D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "worm_db", "worm_db.vcproj", "{8C732A8B-305D-46A1-92A9-5C7F19954E67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B1AAD6B-9F22-4FF1-92A2-7663B6D255F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B1AAD6B-9F22-4FF1-92A2-7663B6D255F7}.Debug|Win32.Build.0 = Debug|Win32
+		{3B1AAD6B-9F22-4FF1-92A2-7663B6D255F7}.Release|Win32.ActiveCfg = Release|Win32
+		{3B1AAD6B-9F22-4FF1-92A2-7663B6D255F7}.Release|Win32.Build.0 = Release|Win32
+		{6A5678EB-8B62-441A-81FC-D4B90581478D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6A5678EB-8B62-441A-81FC-D4B90581478D}.Debug|Win32.Build.0 = Debug|Win32
+		{6A5678EB-8B62-441A-81FC-D4B90581478D}.Release|Win32.ActiveCfg = Release|Win32
+		{6A5678EB-8B62-441A-81FC-D4B90581478D}.Release|Win32.Build.0 = Release|Win32
+		{8C732A8B-305D-46A1-92A9-5C7F19954E67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C732A8B-305D-46A1-92A9-5C7F19954E67}.Debug|Win32.Build.0 = Debug|Win32
+		{8C732A8B-305D-46A1-92A9-5C7F19954E67}.Release|Win32.ActiveCfg = Release|Win32
+		{8C732A8B-305D-46A1-92A9-5C7F19954E67}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
