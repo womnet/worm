@@ -126,6 +126,10 @@ WORM_THREAD_DECLARATION(wmDatabase::AsyncRun)
             {
                 pThis->m_queueAsyncResult->push(pTask);
             }
+            else
+            {
+                delete pTask;
+            }
         }
 
         if (pThis->m_bStop && pThis->m_queueAsyncRequest->empty())
