@@ -38,14 +38,6 @@ wmMysqlResult::wmMysqlResult(void* const pResult, const uint32& dwRowCount, cons
 
 wmMysqlResult::~wmMysqlResult()
 {
-    for (uint32 i=0; i!=m_dwRowCount; ++i)
-    {
-        delete m_ppRow[i];
-        m_ppRow[i] = NULL;
-    }
-
-    delete []m_ppRow;
-    m_ppRow = NULL;
 }
 
 }

@@ -20,13 +20,15 @@ CDbResult::~CDbResult()
 
 void CDbResult::CleanUp()
 {
-    if (NULL != m_ppRow)
+    for (uint32 i=0; i!=m_dwRowCount; ++i)
     {
-        delete []m_ppRow;
-        m_ppRow = NULL;
-
-        m_dwRowCount -= m_dwRowCount;
+        delete m_ppRow[i];
+        m_ppRow[i] = NULL;
     }
+
+    m_dwRowCount -= m_dwRowCount;
+    delete []m_ppRow;
+    m_ppRow = NULL;
 }
 
 bool CDbResult::NextRow()
