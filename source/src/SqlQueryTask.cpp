@@ -49,6 +49,8 @@ CSqlAsyncTaskSet::~CSqlAsyncTaskSet()
 {
     delete m_pTaskSet;
     m_pTaskSet = NULL;
+    delete m_pCallback;
+    m_pCallback = NULL;
 }
 
 bool CSqlAsyncTaskSet::Execute(class wmDatabase* pDb)
