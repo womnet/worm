@@ -47,6 +47,11 @@ CSqlAsyncTaskSet::CSqlAsyncTaskSet(const char* pSql, IQueryCallback* const pCall
 
 CSqlAsyncTaskSet::~CSqlAsyncTaskSet()
 {
+	if (NULL != m_pTaskSet)
+	{
+		m_pTaskSet->ClearTask();
+	}
+
     delete m_pTaskSet;
     m_pTaskSet = NULL;
     delete m_pCallback;

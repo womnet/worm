@@ -33,13 +33,17 @@ CSqlTaskSet::CSqlTaskSet(const CSqlTaskSet& oSet)
 
 CSqlTaskSet::~CSqlTaskSet()
 {
-    std::vector<ISqlTask*>::iterator iterTask = m_aTaskList->begin();
+    delete m_aTaskList;
+    m_aTaskList = NULL;
+}
+
+void CSqlTaskSet::ClearTask()
+{
+	std::vector<ISqlTask*>::iterator iterTask = m_aTaskList->begin();
     for (; m_aTaskList->end()!=iterTask; ++iterTask)
     {
         delete *iterTask;
     }
-    delete m_aTaskList;
-    m_aTaskList = NULL;
 }
 
 void CSqlTaskSet::SetQuery(const uint16& wIndex, const char* pSql)

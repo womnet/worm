@@ -27,6 +27,8 @@ public:
     bool IsSucess() const { return m_bSucess; }
     void SetSucess(const bool& b) { m_bSucess = b; }
 
+	void ClearTask();
+
 private:
     CSqlTaskSet();
 
